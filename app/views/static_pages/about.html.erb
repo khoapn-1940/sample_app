@@ -1,0 +1,13 @@
+<% about = t "about.aboutitle" %>
+<% provide(:title, about) %>
+<h1> <%= t "about.aboutheader" %> </h1>
+<p>
+  <%= t "about.aboutpage1" %> 
+  <%= link_to "#{t "about.aboutlink1"}", "https://www.railstutorial.org/" %>
+  <%= t "about.aboutpage2" %>
+  <%= link_to "#{t "about.aboutlink2"}", "https://www.railstutorial.org/book" %>  
+  <%= t "about.aboutpage3" %>
+  <%= link_to "#{t "about.aboutlink3"}", "http://screencasts.railstutorial.org/" %>  
+  <%= link_to "#{t "about.aboutlink4"}", "http://rubyonrails.org/" %>  
+  <%= t "about.aboutpage5" %>
+</p>
