@@ -39,7 +39,11 @@ en:
     homepage1 : "This is the home page for the"
     homepage2 : "sample application."
     homelink : "Ruby on Rails Tutorial"
-
+    homec5head1 : "Welcome to the Sample App"
+    homec5head2 : "This is the home page for the"
+    homec5head3 : "sample application."
+    homec5link1 : "Ruby on Rails Tutorial"
+    homec5link2 : "Sign up now!"
   help :
     helptitle : "Help"
     helpheader : "Help"
@@ -48,6 +52,7 @@ en:
     helppage1 : "Get help on the Ruby on Rails Tutorial at the"
     helppage2 : "To get help on this sample app, see the"
     helppage3 : "book"
+    
   about :
     aboutitle : "About"
     aboutheader : "About"
@@ -66,4 +71,24 @@ en:
     contactpage : "Contact the Ruby on Rails Tutorial about the sample app at the"
     contactlink : "contact page"
   application :
-    applicationtittle : "| Ruby on Rails Tutorial Sample App"
+    applicationtittle : " | Ruby on Rails Tutorial Sample App"
+    applicationc5helptitle : "Help | Ruby on Rails Tutorial Sample App"
+    applicationc5abouttitle : "About | Ruby on Rails Tutorial Sample App"
+    applicationc5contacttitle : "Contact | Ruby on Rails Tutorial Sample App"
+  header :
+    headerc5link1 : "sample app"
+    headerc5link2 : "Home"
+    headerc5link3 : "Help"
+    headerc5link4 : "Log in"
+  footer :
+    footerc5link1 : "Ruby on Rails Tutorial"
+    footerc5link2 : "Michael Hartl"
+    footerc5link3 : "About"
+    footerc5link4 : "Contact"
+    footerc5link5 : "News"
+    footerc5page1 : "The"
+    footerc5page2 : "by"
+  signup :
+    signupc5title : "Sign up"
+    signupc5header1 : "Sign up"
+    signupc5page1 : "This will be a signup page for new users."
