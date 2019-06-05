@@ -34,7 +34,7 @@ en:
   about : "About"
 
   home :
-    hometitle : "Home"
+    hometitle : "Home | "
     homeheader : "Sample App"
     homepage1 : "This is the home page for the"
     homepage2 : "sample application."
@@ -45,7 +45,7 @@ en:
     homec5link1 : "Ruby on Rails Tutorial"
     homec5link2 : "Sign up now!"
   help :
-    helptitle : "Help"
+    helptitle : "Help | "
     helpheader : "Help"
     helplink1 : "Rails Tutorial help section"
     helplink2 : "Ruby on Rails Tutorial"
@@ -54,7 +54,7 @@ en:
     helppage3 : "book"
     
   about :
-    aboutitle : "About"
+    aboutitle : "About | "
     aboutheader : "About"
     aboutpage1 : "The"
     aboutpage2 : "is a"
@@ -66,12 +66,13 @@ en:
     aboutlink3 : "screencast series"
     aboutlink4 : "Ruby on Rails"
   contact :
-    contacttitle : "Contact"
+    contacttitle : "Contact | "
     contactheader : "Contact"
     contactpage : "Contact the Ruby on Rails Tutorial about the sample app at the"
     contactlink : "contact page"
   application :
-    applicationtittle : " | Ruby on Rails Tutorial Sample App"
+    applicationtittle : "Ruby on Rails Tutorial Sample App"
+    application5hometittle : "Ruby on Rails Tutorial Sample App"
     applicationc5helptitle : "Help | Ruby on Rails Tutorial Sample App"
     applicationc5abouttitle : "About | Ruby on Rails Tutorial Sample App"
     applicationc5contacttitle : "Contact | Ruby on Rails Tutorial Sample App"
@@ -89,6 +90,6 @@ en:
     footerc5page1 : "The"
     footerc5page2 : "by"
   signup :
-    signupc5title : "Sign up"
+    signupc5title : "Sign up | "
     signupc5header1 : "Sign up"
     signupc5page1 : "This will be a signup page for new users."
