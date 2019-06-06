@@ -104,3 +104,12 @@ en:
     password : "Password"
     password_confirmation : "Password confirmation"
     newsubmit : "Create Account"
+  chap7 : 
+    user : "Users"
+    profile : "Profile"
+    setting : "Settings"
+    logout : "Log out"
+    login : "Log in"
+    invalidlogin : "Invalid email/password combination"
+    newuser : "New user?"
+    signupnow : "Sign up now!"

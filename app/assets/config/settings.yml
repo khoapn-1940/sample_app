@@ -1,1 +1,4 @@
 gravatar_forSize : 80
+validateMail : 50
+validateName : 255
+validatePassword : 6
