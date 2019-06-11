@@ -5,3 +5,9 @@ validatePassword : 6
 m : "1"
 gravatar_forSize2 : 50
 per_page : 8
+host : "<your heroku app>.herokuapp.com"
+address : "smtp.sendgrid.net"
+port : "587"
+username : "SENDGRID_USERNAME"
+password : "SENDGRID_PASSWORD"
+domain : "heroku.com"
