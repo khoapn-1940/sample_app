@@ -2,12 +2,14 @@ class UsersController < ApplicationController
   before_action :logged_in_user, except: [:create, :new]
   before_action :load_user, except: [:index, :create, :new]
   before_action :admin_user, only: :destroy
-
+  scope :activated, ->{where activated: true}
   def index
-    @users = User.paginate page: params[:page], per_page: Settings.per_page
+    @users = User.activated.paginate(page: params[:page])
   end
 
-  def show; end
+  def show
+    redirect_to root_url && return unless @user.activated
+  end
 
   def new
     @user = User.new
@@ -16,9 +18,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "chap6.success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "chap11.checkemail"
+      redirect_to root_url
     else
       render :new
     end

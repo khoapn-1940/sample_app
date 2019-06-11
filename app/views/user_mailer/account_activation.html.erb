@@ -1,0 +1,9 @@
+<h1> <%= t("chap11.h1") </h1>
+
+<p> <%= t("chap11.hi") %> <%= @user.name %>,</p>
+
+<p>
+<%= t("chap11.p") %>
+</p>
+
+<%= link_to t("chap11.activate"), edit_account_activation_url(@user.activation_token, email: @user.email) %>
