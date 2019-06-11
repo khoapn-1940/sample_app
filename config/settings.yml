@@ -11,3 +11,4 @@ port : "587"
 username : "SENDGRID_USERNAME"
 password : "SENDGRID_PASSWORD"
 domain : "heroku.com"
+microPostSize : 50

@@ -140,3 +140,6 @@ en:
     info : "Email sent with password reset instructions"
     danger : "Email address not found"
     success : "Password has been reset."
+  chap13 :
+    h3 : "Microposts"
+    createfail : "Sign up Failed!"
