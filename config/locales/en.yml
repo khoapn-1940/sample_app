@@ -134,3 +134,9 @@ en:
     p : "Welcome to the Sample App! Click on the link below to activate your account:"
     activate : "Activate"
     welcome : "Welcome to the Sample App! Click on the link below to activate your account:"
+  chap12 :
+    rememberme : "Remember me on this computer"
+    forgotpass : "Forgot password"
+    info : "Email sent with password reset instructions"
+    danger : "Email address not found"
+    success : "Password has been reset."
