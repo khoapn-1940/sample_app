@@ -91,12 +91,11 @@ en:
     footerc5page2 : "by"
   signup :
     signupc5title : "Sign up | "
-    signupc5header1 : "Sign up"
+    signupc5header1 : "Sign Up "
     signupc5page1 : "This will be a signup page for new users."
   chap6 :
     nouser : "No user with ID"
     success : "Welcome to the Sample App!"
-    name : "name"
     errorCount : "%{count} error"
     theformcontain : "The form contains "
     name : "Name"
@@ -113,3 +112,14 @@ en:
     invalidlogin : "Invalid email/password combination"
     newuser : "New user?"
     signupnow : "Sign up now!"
+  chap10 :
+    edituser : "Edit User "
+    updateprofile : "Update your profile"
+    savechange : "Save changes"
+    account : "Account"
+    alluser : "All users"
+    danger : "Please log in."
+    success : "Profile updated"
+    yousure : "You sure?"
+    destroysuccess : "User deleted"
+    destroyfail : "Destroy error !"

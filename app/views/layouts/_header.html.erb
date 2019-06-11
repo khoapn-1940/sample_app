@@ -1,19 +1,19 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <%= link_to "#{t "header.headerc5link1"}", root_path, id: "logo" %>
-    <nav>
+    <nav> 
       <ul class="nav navbar-nav navbar-right">
         <li> <%= link_to "#{t "header.headerc5link2"}", root_path %> </li>
         <li> <%= link_to "#{t "header.headerc5link3"}", help_path %> </li>
         <% if logged_in? %>
-          <li><%= link_to "#{t "chap7.user"}", "#" %></li>
+          <li><%= link_to "#{t "chap7.user"}", users_path %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Account <b class="caret"></b>
+              <%= t "chap10.account" %> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to "#{t "chap7.profile"}", current_user %></li>
-              <li><%= link_to "#{t "chap7.setting"}", "#" %></li>
+              <li><%= link_to "#{t "chap7.setting"}", edit_user_path(current_user) %></li>
               <li class="divider"></li>
               <li>
                 <%= link_to "#{t "chap7.logout"}", logout_path, method: :delete %>
