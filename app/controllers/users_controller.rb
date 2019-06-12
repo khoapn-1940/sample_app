@@ -16,7 +16,6 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new user_params
-    puts @user
     if @user.save
       @user.send_activation_email
       flash[:info] = t "chap11.checkemail"
@@ -70,7 +69,7 @@ class UsersController < ApplicationController
   end
 
   def load_user
-    @user = User.find_by params[:id]
+    @user = User.find_by_id params[:id]
     return if @user
     flash[:warning] = t "chap6.nouser"
     redirect_to root_path
