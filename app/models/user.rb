@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts
   attr_accessor :remember_token, :activation_token, :reset_token
   scope :activated, ->{where activated: true}
   before_save :downcase_email
@@ -11,6 +12,11 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true,
    length: {minimum: Settings.validatePassword}
+
+  def feed
+    Micropost.newfeeds(id)
+  end
+
   def self.digest string
     if ActiveModel::SecurePassword.min_cost
       cost = BCrypt::Engine::MIN_COST
@@ -56,7 +62,7 @@ class User < ApplicationRecord
   private
 
   def downcase_email
-    self.email = email.downcase!
+    email.downcase!
   end
 
   def create_activation_digest

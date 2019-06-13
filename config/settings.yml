@@ -11,3 +11,8 @@ port : "587"
 username : "SENDGRID_USERNAME"
 password : "SENDGRID_PASSWORD"
 domain : "heroku.com"
+microPostSize : 50
+lim : "should be less than 5MB"
+contentMaximum : 140
+pMax : 5
+acceptFile : "image/jpeg,image/gif,image/png"

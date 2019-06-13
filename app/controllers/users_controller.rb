@@ -6,7 +6,9 @@ class UsersController < ApplicationController
     @users = User.activated.paginate(page: params[:page])
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate(page: params[:page])
+  end
 
   def new
     @user = User.new
@@ -19,6 +21,7 @@ class UsersController < ApplicationController
       flash[:info] = t "chap11.checkemail"
       redirect_to root_url
     else
+      flash[:info] = t "chap13.createfail"
       render :new
     end
   end
@@ -66,7 +69,7 @@ class UsersController < ApplicationController
   end
 
   def load_user
-    @user = User.find_by params[:id]
+    @user = User.find_by_id params[:id]
     return if @user
     flash[:warning] = t "chap6.nouser"
     redirect_to root_path
