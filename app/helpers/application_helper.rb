@@ -7,4 +7,8 @@ module ApplicationHelper
       page_title + base_title
     end
   end
+
+  def find_followed
+    current_user.active_relationships.find_by(followed_id: @user.id)
+  end
 end

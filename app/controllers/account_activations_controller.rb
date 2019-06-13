@@ -5,7 +5,7 @@ class AccountActivationsController < ApplicationController
       user.activate
       log_in user
       flash[:success] = t "chap11.accountactivated"
-      edirect_to user
+      redirect_to user
     else
       flash[:danger] = t "chap11.invalidlink"
       redirect_to root_url

@@ -2,6 +2,17 @@ class UsersController < ApplicationController
   before_action :logged_in_user, except: [:create, :new]
   before_action :load_user, except: [:index, :create, :new]
   before_action :admin_user, only: :destroy
+
+  def following
+    @users = @user.following.paginate(page: params[:page])
+    render "show_follow"
+  end
+
+  def followers
+    @users = @user.followers.paginate(page: params[:page])
+    render "show_follow"
+  end
+
   def index
     @users = User.activated.paginate(page: params[:page])
   end
