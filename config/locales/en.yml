@@ -156,3 +156,9 @@ en:
     confirmupload : "Maximum file size is 5MB. Please choose a smaller file."
     detele : "delete"
     compose : "Compose new micropost..."
+  chap14 :
+    unfollow : "Unfollow"
+    follow : "Follow"
+    notfound : "User not found"
+    following : "Following"
+    followers : "Follower"
